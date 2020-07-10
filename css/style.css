@@ -444,8 +444,8 @@ header .mobile-menu .mobile-menu-header .social img {
     width: 255px;
     height: 40px;
 }
-.block-box {
-
+.panel {
+    padding-top: 30px;
 }
 .block-box .price span {
     font-weight: 800;
@@ -588,7 +588,8 @@ form.email .input-group::placeholder {
     color: #000000;
     margin-bottom: 10px;
 }
-.accordion.ui-accordion-header-active:after {
+
+.panel.ui-accordion-content-active:before  {
     content: "";
     background: #CCCCCC;
     width: 1110px;
@@ -596,7 +597,10 @@ form.email .input-group::placeholder {
     position: absolute;
     left: 15px;
     right: 0;
-    top: 78px;
+    top: 130px;
+}
+.panel.last.ui-accordion-content-active:before {
+    top: 80px;
 }
 .accordion.ui-accordion-header-active .ui-accordion-header-icon {
     transform: rotate(90deg);

@@ -35,6 +35,7 @@
     }
     #home .left-box {
         padding-top: 0;
+        text-align: center;
     }
     #home {
         padding: 30px 0;
@@ -123,9 +124,15 @@
     .pay-items.four .accordion {
         padding: 0;
     }
-    .accordion.ui-accordion-header-active:after {
+    .panel.ui-accordion-content-active:before {
         width: 690px;
-        top: 126px;
+        top: 227px;
+    }
+    .panel.last.ui-accordion-content-active:before {
+        top: 176px;
+    }
+    .panel.last-mobile.ui-accordion-content-active:before {
+        top: 124px;
     }
     .accordion .ui-accordion-header-icon {
         top: 27px;
@@ -253,6 +260,10 @@
     }
     #composition label {
         font-size: 16px;
+    }
+    .panel.ui-accordion-content-active:before {
+        width: 510px;
+        top: 276px;
     }
     #oc .box img:first-child {
         width: 53px;
@@ -391,11 +402,14 @@
     }
     .pay .pay-items {
         padding: 20px 16px 20px 16px;
+
     }
+
     .pay .pay-items .title {
         margin-bottom: 15px;
         font-size: 16px;
         line-height: 22px;
+        padding: 0 45px;
     }
     .pay-items .images {
         width: 83%;
@@ -486,6 +500,10 @@
         width: 90px;
         height: 20px;
     }
+    .panel.ui-accordion-content-active:before {
+        display: none;
+    }
+    
     footer .box {
         width: 290px;
     }

@@ -1,5 +1,5 @@
 $(function(){
-    $( "#accordion" ).accordion({
+    $( ".accordions" ).accordion({
         collapsible: true,
         active: false
     });
