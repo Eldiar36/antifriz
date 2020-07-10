@@ -74,6 +74,10 @@
         height: 40px;
         width: 40px;
     }
+    .pay-form .select-box {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
     #composition .check-wrapper {
         margin-bottom: 20px;
     }
@@ -335,11 +339,14 @@
         width: 60px;
         height: 12px;
     }
+    #composition .check-wrapper {
+        margin-bottom: 15px;
+    }
     #composition input[type=checkbox] + label:before {
 
-        height: 26px;
-        width: 26px;
-        font-size: 23px;
+        height: 20px;
+        width: 20px;
+        font-size: 17px;
     }
     #composition input[type=checkbox]:checked + label:before {
         content: url("../images/icons8-checkmark -mobile.svg");
@@ -348,13 +355,33 @@
         margin-right: 8px;
     }
     #composition label {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 13px;
     }
     .section-subtitle {
         font-size: 18px;
         margin-bottom: 5px;
         line-height: 25px;
+    }
+    #composition .subscribe .form__select {
+        width: 158px;
+        height: 30px;
+    }
+    #composition .block-box .section-subtitle {
+        margin-bottom: 24px;
+    }
+    #composition .block-box .price span {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .form__select:before {
+        width: 40px;
+        height: 30px;
+    }
+    .form__select:after {
+        height: 11px;
+        right: 4px;
+        top: 8px;
     }
     form.email p {
         font-size: 14px;
@@ -410,6 +437,14 @@
     }
     .pay-items .pay-form .price p {
         font-size: 18px!important;
+    }
+    .pay-form .select-box {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .form__select {
+        width: 50%;
+        height: 40px;
     }
     #oc .box img:first-child {
         width: 28px;

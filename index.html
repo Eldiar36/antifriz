@@ -210,7 +210,7 @@
             </div>
             <div class="row justify-content-between">
 
-                <div class="col-lg-5 col-md-5 col-sm-6 col-6" >
+                <div class="col-lg-5 col-md-5 col-sm-6 col-6" style="padding: 0 0 0 15px">
 
                     <div class="d-flex align-items-center check-wrapper">
                         <input type="checkbox" id="check2" name="check1"/>
@@ -244,7 +244,7 @@
                     <label for="check9">Ultra HD/4k каналы</label>
                 </div>
                 </div>
-                <div class="col-lg-5  col-md-5 col-sm-6 col-6 two">
+                <div class="col-lg-5  col-md-5 col-sm-6 col-6 two" style="padding: 0 15px 0 0">
                     <div class="d-flex align-items-center check-wrapper">
                         <input type="checkbox" id="check111" name="check1" checked/>
                         <label for="check111">Базовый премиум</label>
@@ -276,12 +276,23 @@
                 </div>
                 </div>
 
-            <div class="form__select">
-                <select name="select">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                </select>
-            </div>
+           <div class="block-box row">
+               <div class="col-lg-7 col-md-7 col-sm-7 col-7 subscribe">
+                   <div class="section-subtitle">
+                       Срок подписки
+                   </div>
+                   <div class="form__select">
+                       <select name="select">
+                           <option value="1">1 месяц</option>
+                           <option value="2">2 месяца</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="col-lg-5 col-md-5 col-sm-5 col-5 price">
+                   <div class="section-subtitle">Цена</div>
+                   <span> 2 USD</span>
+               </div>
+           </div>
             <form action="" class="email">
                 <h3 class="section-subtitle">Введите адрес электронной почты</h3>
                 <p>На него будет отправлена покупка</p>
@@ -404,53 +415,47 @@
                             <p class="subtitle">ДАННЫЕ ВАШЕЙ КРЕДИТНОЙ КАРТЫ</p>
                             <form action="">
                                 <div class="row">
-                                    <div class="col-6 col-sm-12 col-12">
+                                    <div class="col-lg-6 col-sm-12 col-12">
                                         <label for="name">Имя</label>
                                         <input id="name" type="text">
                                     </div>
-                                    <div class="col-6 col-sm-12 col-12">
+                                    <div class="col-lg-6 col-sm-12 col-12">
                                         <label for="surname">Фамилия</label>
                                         <input id="surname" type="text">
                                     </div>
-                                    <div class="col-6 col-sm-12 col-12">
+                                    <div class="col-lg-6 col-sm-12 col-12">
                                         <label for="number">Номер кредитной карты</label>
                                         <input id="number" type="text">
                                     </div>
-                                    <div class="col-6 col-sm-12 col-12">
-                                        <div class="row">
+                                    <div class="col-lg-6 col-sm-12 col-12">
+                                            <div class="d-flex select-box align-items-baseline">
+                                                <div class="form__select first">
+                                                    <select name="select">
+                                                        <option value="1">Месяц</option>
+                                                        <option value="2">Месяц</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form__select">
+                                                    <select  name="select">
+                                                        <option value="1">Год</option>
+                                                        <option value="2">Год</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-4 col-md-4 col-sm-12 col-12">
+                                        <label for="cvc">CVC</label>
+                                        <input id="cvc" type="text">
+                                    </div>
+                                    <div class="col-lg-8  col-sm-12 col-12">
+                                        <label for="index">Почтовый индекс</label>
+                                        <input id="index" type="text" style="margin-bottom: 0">
+                                        <span class="optional">(необязательно)</span>
+                                    </div>
+                                    </div>
 
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-12">
-                                        <div class="row">
-                                            <div class="col-4 col-md-4 col-sm-12 col-12">
-                                                <label for="cvc">CVC</label>
-                                                <input id="cvc" type="text">
-                                            </div>
-                                            <div class="col-lg-8  col-sm-12 col-12">
-                                                <label for="index">Почтовый индекс</label>
-                                                <input id="index" type="text" style="margin-bottom: 0">
-                                                <span class="optional">(необязательно)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-12">
-                                       <div class="d-flex">
-                                           <div class="form__select">
-                                               <select name="select">
-                                                   <option value="1">Месяц</option>
-                                                   <option value="2">Месяц</option>
-                                               </select>
-                                           </div>
-                                           <div class="form__select">
-                                               <select name="select">
-                                                   <option value="1">Год</option>
-                                                   <option value="2">Год</option>
-                                               </select>
-                                           </div>
-                                       </div>
-                                    </div>
-                                </div>
+
+
                                <div class="end">
                                    <p class="price">Всего к оплате: <span>2$</span></p>
                                    <div class="btn-block">

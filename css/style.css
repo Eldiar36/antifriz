@@ -33,6 +33,7 @@ body {
 }
 main {
     background: #F8F8F8;
+    overflow-x: hidden;
 }
 header {
     background: #ffffff;
@@ -374,52 +375,94 @@ header .mobile-menu .mobile-menu-header .social img {
      margin-bottom: 40px;
  }
 .form__select {
-    width: 158px;
-    height: 30px;
-    background-color: #fff;
-    border: 1px solid #828282;
+    width: 140px;
+    height: 60px;
     position: relative;
-    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 .form__select:before {
     content: "";
     display: block;
-    width: 1px;
-    height: 27px;
-
-    background-color: #ccc;
+    width: 65px;
+    height: 40px;
+    background: #FF4D43;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 0px 10px 10px 0px;;
     pointer-events: none;
-
     position: absolute;
-    top: 1px;
-    right: 30px;
+    top: -1px;
+    right: -1px;
     z-index: 1;
 }
 .form__select:after {
     content: "";
-    border-style: solid;
-    border-width: 5px 5px 0 5px;
-    border-color: #333 transparent transparent transparent;
+    background: url("../images/arrow-down-white.png")no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    z-index: 9;
+}
+.form__select option {
+    background: #ffffff;
+}
+
+.pay-form .form__select:before {
+    display: none;
+}
+.pay-form .select-box {
+    padding-top: 43px;
+}
+.pay-form .form__select.first {
+    margin-right: 30px;
+}
+.pay-form  .form__select  option{
+    font-size: 20px;
+    line-height: 27px;
+    color: #8F8F8F;
+}
+.pay-form .form__select:after {
+    content: "";
+    width: 20px;
+    height: 11px;
+    background: url(../images/down-arrow.png)no-repeat;
+    background-size: contain;
     pointer-events: none;
     position: absolute;
-    top: 50%;
-    right: 10px;
+    top: 41%;
+    right: 20px;
     z-index: 1;
     margin-top: -2px;
 }
+#composition .subscribe .form__select{
+    width: 255px;
+    height: 40px;
+}
+.block-box {
 
+}
+.block-box .price span {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 46px;
+
+    color: #3CB504;
+}
 .form__select select {
     -webkit-appearance: none;
     -moz-appearance: none;
-
     width: 100%;
     height: 100%;
     padding: 0 20px;
-
     background: none;
     border-radius: 3px;
     border: 1px solid #ccc;
-
     font-size: 14px;
     color: #000;
 }
